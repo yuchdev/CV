@@ -6,60 +6,52 @@ favicon: images/favicon.ico
 version: 2
 
 # Personal info
-name: Brett Harris
-title: Senior Network System Administrator
-email: brett.h@email.co.uk
-website: www.github.com/sproogen/resume-theme
+name: Yurii Cherkasov
+title: Senior Software Engineer
+email: yurii.cherkasov@protonmail.com
+website: https://github.com/yuchdev/
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
-twitter_username: facespics
-github_username:  sproogen
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-instagram_username: jameswgrant
-linkedin_username: jameswgrant
-# xing_username: jekyll
-# pinterest_username: jekyll
-youtube_username: globalmtb
-# googleplus_username: +jekyll
-# orcid_username: 0000-0000-0000-0000
+github_username:  yuchdev
+xing_username: atatat
 
 # Additional icon links
 additional_links:
 - title: itsgoingto.be
   icon: fas fa-globe
   url: https://www.itsgoingto.be
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
 
 # About Section
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  Dedicated software engineer, having more than a decade of experience in software design and development. My job is my passion and hobby. My biggest expertise is C++/Python, separately or together, with these technologies and my interest to create high-quality software, I can create almost everything.
+
+  I supported legacy systems, implemented new systems, and designed them from scratch.
+
+  I have experience both in enterprise and in startups.
+
+  I was setting up development processes and workflows, Agile/Scrum, code review, Continuous Integration, and task tracking, managed a team of Software Engineers, DevOps, and QAs.
+
+  You can take a look at examples of my code on Github, so that get some view of the coding standards I'm keeping during my daily work, and insist to be implemented within my team:
+
+  [Probabilistic calculator, checking whether the file encrypted or not](https://github.com/yuchdev/entropy_calculator)
+
+  [Simple multi-threaded password bruteforcer for MD5 hash (with educational purpose only!)](https://github.com/yuchdev/md5bruteforcer)
+
+  [Generator of program code](https://github.com/yuchdev/code_generator)
 
 content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
-        # link_text: Project Website
+        title: The comprehensive catalog of C++ books
+        link: https://github.com/yuchdev/CppBooks
         additional_links:
           - title:  sproogen/modern-resume-theme
             icon: fab fa-github
@@ -68,23 +60,31 @@ content:
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+          A comprehensive catalog of modern and classic books on C++ programming language
         description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          No secret, most of the C++ books on the market are for absolute beginners, and 90% of them are bad. Few good books for intermediate-to-advanced developers, but finding and advising a good read on C++ is almost a scientific problem.
+          I hope this curated book catalog would save lots of time both to C++ beginners and professionals.
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
+        title: VEKTOR T13 Technologies
+        link: https://vektort13.pro
+        sub_title: Lead Software Engineer
+        caption: December 2019 - Present
         quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+          IT Security Startup
         description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+            In this startup I was working on a line of products:
+            * IP Auditor. Anti-fraud system for a comprehensive audit of IP addresses, providing reports
+            about geographical location, connection details, and threats that could possess that IP address.
+            I’m working on the server-side, developing an Anti-Fraud API Aggregator, collecting information
+            from a number of 3rd-party APIs.
+            * Virtualbox. Powerful opensource x86/AMD64/Intel64 virtualization product. I created my own
+            branch with slight improvements over the Oracle version, implemented a cross-platform build
+            toolchain, and worked on documentation.
+            Programming languages, products and technologies: C, C++, Qt5, Python, PyQt, Django REST Framework, CMake, TeamCity
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
