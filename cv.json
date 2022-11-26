@@ -1,12 +1,15 @@
 {
-  "Name": "Yurii Cherkasov",
-  "Birthdate": "21.05.1982",
-  "E-mail": "yurii.cherkasov@protonmail.com",
-  "Phone": [
-    "+84 (83) 9052141",
-    "+380 (68) 5655707"
-  ],
-  "Current location": "Ho Chi Minh City, Vietnam (UTC+7)",
+  "Personal Information": {
+    "Name": "Yurii Cherkasov",
+    "Birthdate": "21.05.1982",
+    "E-mail": "yurii.cherkasov@protonmail.com",
+    "Phone": [
+      "+1 (256) 8503463",
+      "+84 (83) 9052141",
+      "+380 (68) 5655707"
+    ],
+    "Current location": "Ho Chi Minh City, Vietnam (UTC+7)"
+  },
   "Overview": "I am a dedicated software engineer, having more than a decade of experience in software design and development. Creating software is my passion and my hobby. My biggest expertise is in C++, as well as Java/Python as secondary languages, separately or together. I supported legacy systems, implemented new systems, and designed them from scratch. I have experience both in enterprise and in startups, setting up development processes and workflows, Agile/Scrum, code review, Continuous Integration, and task tracking, and providing technical leadership to a small team of Software Engineers, DevOps and QA. You can take a look at my projects on Github, including but not limited to software projects:",
   "Projects": [
     "I create [educational material](https://github.com/yuchdev/cpp) for the Advanced C++ course",
@@ -31,7 +34,7 @@
     ],
     "Working experience in Java": [
       "Core Java and JavaFX for cross-platform desktop development",
-      "High-load blackbox testing platform for REST API",
+      "High-load blackbox testing platform for REST API"
     ],
     "Unix development": [
       "POSIX, pthreads",
@@ -45,7 +48,7 @@
     ],
     "DevOps skills": [
       "Continuous Integration and Delivery combining TeamCity, GitHub Actions, and Python",
-      "Git(Hub): Version control, Branch and Release Management"
+      "Git(Hub): Version control, Branch and Release Management",
       "Docker and general workflow automation on Linux",
       "AWS, deployment and management tools (EC2/S3/IAM)",
       "MS Server-Side Technologies: Active Directory, Hyper-V Server, Docker for Windows"
@@ -54,7 +57,7 @@
       "Modern Object-Oriented Analysis and Design",
       "XML/XSL/XSD libraries and XPath Queries",
       "Working knowledge of database development",
-      "Version control, Bug Tracking and Continuous Integration: Git, SVN, Jira, TeamCity",
+      "Version control, Bug Tracking and Continuous Integration: Git, SVN, Jira, TeamCity"
     ]
   },
   "Employment history": {
@@ -62,7 +65,7 @@
       "Name": "Vektor T13 Technologies",
       "Brief": "IT-Security Startup",
       "Website": "https://www.vektort13.pro/",
-      "Period": "12.2019 – 04.2022",
+      "Period": "12.2019 - 04.2022",
       "Position": "Lead C++ developer",
       "Description": "In this startup I was working on a line of products",
       "Projects": {
@@ -75,7 +78,7 @@
       "Name": "Massive, LLC",
       "Brief": "Distributed computing service provider",
       "Website": "https://www.joinmassive.com/",
-      "Period": "09.2019 – 12.2019",
+      "Period": "09.2019 - 12.2019",
       "Position": "Senior Software Engineer",
       "Description": "Working on cross-platform Windows/macOS SDK for alternate application monetization platform, giving developer much more freedom of earning on his free applications, than just adding annoying ads.",
       "Projects": {
@@ -87,7 +90,7 @@
       "Name": "WebGear Services, LTD (Trademark CyberYozh)",
       "Brief": "Internet Privacy Startup",
       "Website": "https://cyberyozh.com/",
-      "Period": "10.2014 – 07.2018",
+      "Period": "10.2014 - 07.2018",
       "Position": "Consultant, Lead C++ developer",
       "Description": "From this point, I turned from large corporations to small startups. With my enterprise experience, I defined basically everything from architecture to process from scratch, including Continuous Integration and QA, but still, it was still mostly technical, not a management position.",
       "Projects": {
@@ -100,7 +103,7 @@
       "Name": "Deutsche Bank AG",
       "Brief": "Global Investment Bank",
       "Website": "https://db.com/",
-      "Period": "11.2012 – 09.2014",
+      "Period": "11.2012 - 09.2014",
       "Position": "Associate Software Engineer",
       "Description": "",
       "Projects": {
@@ -113,7 +116,7 @@
       "Name": "Numerix, LLC",
       "Brief": "Analytics Provider for derivatives and financial products",
       "Website": "https://numerix.com/",
-      "Period": "07.2011 – 08.2012",
+      "Period": "07.2011 - 08.2012",
       "Position": "Senior Software Developer",
       "Description": "",
       "Projects": {
@@ -126,11 +129,11 @@
       "Name": "Wärtsilä (former Transas), Corp.",
       "Brief": "World-Leading developer and supplier of marine and aviation onboard equipment",
       "Website": "",
-      "Period": "01.2010 – 07.2011",
+      "Period": "01.2010 - 07.2011",
       "Position": "Software Developer",
       "Description": "",
       "Projects": {
-        "Gravity": "I designed and developed land equipment and onboard software for wildfire monitoring drones, GUI and GIS in Java, and ground control and onboard software in C/C++. My role included the full-scale development tasks – application design, bug fixing, writing unit-tests, and performing code reviews.",
+        "Gravity": "I designed and developed land equipment and onboard software for wildfire monitoring drones, GUI and GIS in Java, and ground control and onboard software in C/C++. My role included the full-scale development tasks - application design, bug fixing, writing unit-tests, and performing code reviews.",
         "Automation": "A number of internal projects. Here I developed X-Window events logging module for a complex security and monitoring system using Xlib API, and improved the Continuous Integration pipeline."
       },
       "Programming languages, products and technologies": "С/C++, Java SE, Python, Autotools, CMake, XML/XSL/XPath, Google Test"
@@ -139,7 +142,7 @@
       "Name": "DoctorWeb, LLC",
       "Brief": "Well-known developer of anti-malware and security solutions",
       "Website": "",
-      "Period": "07.2006 – 07.2009",
+      "Period": "07.2006 - 07.2009",
       "Position": "Junior Software Engineer",
       "Description": "Here’s where my Software Engineer career has started. I wanted to touch as much as possible, but also I wanted to participate in a whole cycle from design analysis to release. Kind of success in it.",
       "Projects": {
