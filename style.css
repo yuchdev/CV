@@ -20,7 +20,7 @@ article {
   padding:0 1em;
 }
 
-section{
+main section{
   margin: 1em;
   padding: 1em;
 }
@@ -83,67 +83,85 @@ a .fab {
   color: white;
 }
 
-.course, .skills {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.course .title {
-  color: #509e98;
-  -ms-flex: 0 0 33.3%;
-  flex: 0 0 33.3%;
-  max-width: 33%;
-}
-
-.course .descrition {
-  -ms-flex: 0 0 66.6%;
-  flex: 0 0 66.6%;
-  max-width: 66.6%;
-}
-
-.course .descrition p {
-  padding-left: 1em;
-}
-
-.skills .column {
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
-.skills .column ul, ul.job-description {
-  list-style-type: none;
-}
-
-.skills .column ul > li:before {
-  content: "►";
-  padding-right: 0.5em;
-  color: #509e98;
-}
-
-.school, .job-title {
-  text-transform: capitalize;
-}
-
-.school span, .job-title span {
-  color: #889499;
-  text-decoration: underline;
-}
-
-ul.job-description li:before{
-  content: "✔";
-  padding-right: 0.5em;
-  color: #509e98;
-}
-
 footer {
  padding: 1em 1.5em;
  background: #A7B8BF;
  color: white;
- text-align: right;
+ text-align: center;
 }
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p, th, td, li, dl, dt, dd {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Header */
+table.personal-details {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.personal-details th,
+table.personal-details td {
+  padding: 8px;
+  text-align: left;
+}
+
+table.personal-details th {
+  font-weight: bold;
+}
+
+table.personal-details tr:nth-child(odd) th,
+table.personal-details tr:nth-child(odd) td {
+  background-color: #f9f9f9;
+}
+
+table.personal-details tr td:first-child {
+  text-align: left;
+  font-weight: bold;
+}
+
+table.personal-details tr td:last-child {
+  text-align: left;
+}
+
+table.personal-details tr td ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Overview */
+
+/* Professional Experience */
+table.job-description {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.job-description th,
+table.job-description td {
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+table.job-description th {
+  width: 230px;
+  font-style: italic;
+  font-size: smaller;
+  background-color: #f2f2f2;
+  vertical-align: top;
+  text-align: left;
+}
+
+/* Education */
+
 
 @media only screen and (max-width: 768px) {
   .course {

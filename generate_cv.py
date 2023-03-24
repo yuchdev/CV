@@ -18,18 +18,7 @@ def head(data, html):
         HtmlElement(
             name='meta',
             self_closing=True,
-            attributes={"viewport": "width=device-width, initial-scale=1"}
-        ).render_to_string(html)
-        HtmlElement(
-            name='meta',
-            self_closing=True,
-            attributes={"http-equiv": "default-style", "content": "cv.css"}
-        ).render_to_string(html)
-        HtmlElement(
-            name='link',
-            self_closing=True,
-            rel='stylesheet',
-            href='cv.css'
+            attributes={"name": "viewport", "content": "width=device-width, initial-scale=1"}
         ).render_to_string(html)
         HtmlElement(
             name='link',
@@ -38,10 +27,18 @@ def head(data, html):
             href="./img/favicon.ico"
         ).render_to_string(html)
         HtmlElement(
-            name='link', self_closing=True,
+            name='link',
+            self_closing=True,
+            rel='stylesheet',
             href="https://use.fontawesome.com/releases/v5.0.13/css/all.css",
-            integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp",
+            src="https://kit.fontawesome.com/bf1ecf6a20.js",
             crossorigin="anonymous"
+        ).render_to_string(html)
+        HtmlElement(
+            name='link',
+            self_closing=True,
+            rel='stylesheet',
+            href='cv.css'
         ).render_to_string(html)
 
         HtmlElement(name='title').render_to_string(
@@ -64,13 +61,14 @@ def body_header(data, html):
                 attributes={'src': './img/avatar.jpg', 'alt': 'Profile photo'}
             ).render_to_string(html)
         html(f'<h1>{data["Personal Information"]["Name"]}</h1>')
+        html(f'<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget</p>')
         with html.block('section', id='header-social'):
             for key, value in data["Social"].items():
-                with html.block('a', href=value):
+                with html.block('a', href=value, target="_blank"):
                     HtmlElement(
                         name='i',
-                        self_closing=True,
-                        attributes={'class': social_icons[key], "target": "_blank"}
+                        self_closing=False,
+                        attributes={'class': social_icons[key]}
                     ).render_to_string(html)
 
 
@@ -171,13 +169,12 @@ def education(data, html):
 
 def body_main(data, html):
     with html.block('main'):
-        with html.block('div', id='container'):
-            with html.block('div', id='content'):
-                personal_details(html, data)
-                overview(data, html)
-                professional_skills(data, html)
-                work_experience(data, html)
-                education(data, html)
+        with html.block('section', id='container'):
+            personal_details(html, data)
+            overview(data, html)
+            professional_skills(data, html)
+            work_experience(data, html)
+            education(data, html)
 
 
 def body_footer(data, html):
