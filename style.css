@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font-family: 'Raleway';
+  font-family: 'Raleway', serif;
   font-size: 16px;
   line-height: 1.8em;
 }
@@ -34,7 +34,6 @@ header {
   text-align: center;
   background-image: url('./img/bg.jpg');
   background-size: cover;
-  background-position: fixed;
   color: white;
 }
 
@@ -109,7 +108,7 @@ a .fab {
 }
 
 .skills .column {
-  -ms-flex: 0 0 50%%;
+  -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
 }

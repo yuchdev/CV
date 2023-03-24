@@ -7,24 +7,71 @@ from code_generation.html.html_file import HtmlFile
 from code_generation.html.html_element import HtmlElement
 
 
-def header(data, html):
+def head(data, html):
     html(f'<!doctype HTML>')
     with html.block('head', lang='en'):
         HtmlElement(
-            name='meta', self_closing=True, charset='utf-8'
+            name='meta',
+            self_closing=True,
+            attributes={"charset": "utf-8"}
         ).render_to_string(html)
         HtmlElement(
-            name='meta', self_closing=True, viewport='width=device-width, initial-scale=1'
+            name='meta',
+            self_closing=True,
+            attributes={"viewport": "width=device-width, initial-scale=1"}
         ).render_to_string(html)
         HtmlElement(
-            name='meta', self_closing=True, attributes={"http-equiv": "default-style", "content": "cv.css"}
+            name='meta',
+            self_closing=True,
+            attributes={"http-equiv": "default-style", "content": "cv.css"}
         ).render_to_string(html)
         HtmlElement(
-            name='link', self_closing=True, rel='stylesheet', href='cv.css'
+            name='link',
+            self_closing=True,
+            rel='stylesheet',
+            href='cv.css'
+        ).render_to_string(html)
+        HtmlElement(
+            name='link',
+            self_closing=True,
+            rel='icon',
+            href="./img/favicon.ico"
+        ).render_to_string(html)
+        HtmlElement(
+            name='link', self_closing=True,
+            href="https://use.fontawesome.com/releases/v5.0.13/css/all.css",
+            integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp",
+            crossorigin="anonymous"
         ).render_to_string(html)
 
         HtmlElement(name='title').render_to_string(
             html, content=f"{data['Personal Information']['Name']}")
+
+
+def body_header(data, html):
+    social_icons = {
+        "Facebook": "fab fa-facebook-f",
+        "LinkedIn": "fab fa-linkedin-in",
+        "GitHub": "fab fa-github-alt",
+        "Twitter": "fab fa-twitter",
+        "Instagram": "fab fa-instagram",
+    }
+    with html.block('header'):
+        with html.block('div', id='avatar-container'):
+            HtmlElement(
+                name='img',
+                self_closing=True,
+                attributes={'src': './img/avatar.jpg', 'alt': 'Profile photo'}
+            ).render_to_string(html)
+        html(f'<h1>{data["Personal Information"]["Name"]}</h1>')
+        with html.block('section', id='header-social'):
+            for key, value in data["Social"].items():
+                with html.block('a', href=value):
+                    HtmlElement(
+                        name='i',
+                        self_closing=True,
+                        attributes={'class': social_icons[key], "target": "_blank"}
+                    ).render_to_string(html)
 
 
 def personal_details(html, data):
@@ -122,7 +169,18 @@ def education(data, html):
                     html(f'{edu["Achievements"]}')
 
 
-def footer(data, html):
+def body_main(data, html):
+    with html.block('main'):
+        with html.block('div', id='container'):
+            with html.block('div', id='content'):
+                personal_details(html, data)
+                overview(data, html)
+                professional_skills(data, html)
+                work_experience(data, html)
+                education(data, html)
+
+
+def body_footer(data, html):
     year = datetime.datetime.now().year
     with html.block('footer'):
         html(
@@ -133,22 +191,14 @@ def footer(data, html):
 def generate_cv_from_json(json_file_path: str, html_file_path: str):
     with open(json_file_path, 'r') as f:
         data = json.load(f)
-
     html = HtmlFile(html_file_path)
 
     with html.block('html'):
-        header(data, html)
+        head(data, html)
         with html.block('body'):
-            with html.block('div', id='container'):
-                with html.block('div', id='header'):
-                    html(f'<h1 class=cv-header>{data["Personal Information"]["Name"]}</h1>')
-                with html.block('div', id='content'):
-                    personal_details(html, data)
-                    overview(data, html)
-                    professional_skills(data, html)
-                    work_experience(data, html)
-                    education(data, html)
-        footer(data, html)
+            body_header(data, html)
+            body_main(data, html)
+            body_footer(data, html)
 
 
 def main():

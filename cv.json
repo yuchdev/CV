@@ -10,6 +10,13 @@
     ],
     "Current location": "Ho Chi Minh City, Vietnam (UTC+7)"
   },
+  "Social": {
+    "LinkedIn": "https://www.linkedin.com/in/yuchdev/",
+    "GitHub": "https://github.com/yuchdev",
+    "Facebook": "https://www.facebook.com/yuchdev",
+    "Twitter": "https://twitter.com/yuchdev",
+    "Instagram": "https://www.instagram.com/yuchdev"
+  },
   "Overview": "I am a dedicated software engineer, having more than a decade of experience in software design and development, with the passion for creating good programs and products. My biggest expertise is in C++, as well as Java/Python as secondary languages, separately or together. I supported legacy systems, implemented new systems, and designed them from scratch. I have experience both in enterprise and in startups, setting up development processes and workflows, Agile/Scrum, code review, Continuous Integration, and task tracking, and providing technical leadership to a small team of Software Engineers, DevOps and QA. You can take a look at my projects on Github, including but not limited to software projects:",
   "Projects": [
     "I create [educational material](https://github.com/yuchdev/cpp) for the Advanced C++ course",
