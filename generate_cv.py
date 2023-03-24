@@ -38,7 +38,7 @@ def head(data, html):
             name='link',
             self_closing=True,
             rel='stylesheet',
-            href='cv.css'
+            href='style.css'
         ).render_to_string(html)
 
         HtmlElement(name='title').render_to_string(
