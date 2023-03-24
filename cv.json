@@ -10,7 +10,7 @@
     ],
     "Current location": "Ho Chi Minh City, Vietnam (UTC+7)"
   },
-  "Overview": "I am a dedicated software engineer, having more than a decade of experience in software design and development. Creating software is my passion and my hobby. My biggest expertise is in C++, as well as Java/Python as secondary languages, separately or together. I supported legacy systems, implemented new systems, and designed them from scratch. I have experience both in enterprise and in startups, setting up development processes and workflows, Agile/Scrum, code review, Continuous Integration, and task tracking, and providing technical leadership to a small team of Software Engineers, DevOps and QA. You can take a look at my projects on Github, including but not limited to software projects:",
+  "Overview": "I am a dedicated software engineer, having more than a decade of experience in software design and development, with the passion for creating good programs and products. My biggest expertise is in C++, as well as Java/Python as secondary languages, separately or together. I supported legacy systems, implemented new systems, and designed them from scratch. I have experience both in enterprise and in startups, setting up development processes and workflows, Agile/Scrum, code review, Continuous Integration, and task tracking, and providing technical leadership to a small team of Software Engineers, DevOps and QA. You can take a look at my projects on Github, including but not limited to software projects:",
   "Projects": [
     "I create [educational material](https://github.com/yuchdev/cpp) for the Advanced C++ course",
     "I’m a creator and maintainer of the only [Comprehensive C++ Books Catalog](https://github.com/yuchdev/CppBooks)",
@@ -61,16 +61,16 @@
     ]
   },
   "Employment history": {
-    "VEKTOR T13 Technologies, LLC": {
-      "Name": "Vektor T13 Technologies",
+    "VEKTOR T13 Technologies": {
+      "Name": "Vektor T13 Technologies, LLC",
       "Brief": "IT-Security Startup",
       "Website": "https://www.vektort13.pro/",
       "Period": "12.2019 - 04.2022",
       "Position": "Lead C++ developer",
-      "Description": "In this startup I was working on a line of products",
+      "Description": "We were a small startup, attempting to create a line of privacy-related products, including protection against fingerprinting, surveillance and tracking, and had plans of a hardened VPN service",
       "Projects": {
-        "IP Audit": "Anti-fraud system for a comprehensive audit of IP addresses, providing reports about geographical location, connection details, and threats that could possess that IP address. I was working on the server-side, developing an Anti-Fraud API Aggregator for collecting information about requested IP from a number of 3rd-party APIs",
-        "Virtualbox": "Powerful opensource x86/AMD64/Intel64 virtualization product. I created my own branch with slight improvements over the Oracle version, implemented a cross-platform build toolchain, and worked on documentation."
+        "Virtualbox": "Powerful opensource x86/AMD64/Intel64 virtualization product. I created my own branch with slight improvements over the Oracle version, implemented a cross-platform build toolchain, and worked on documentation.",
+        "IP Audit": "Anti-fraud system for a comprehensive audit of IP addresses, providing reports about geographical location, connection details, and threats that could possess that IP address. I was working on the server-side, developing an Anti-Fraud API Aggregator for collecting information about requested IP from a number of 3rd-party APIs"
       },
       "Programming languages, products and technologies": "C, C++, Qt5, Python, PyQt, Django REST Framework, CMake, TeamCity"
     },
@@ -82,8 +82,9 @@
       "Position": "Senior Software Engineer",
       "Description": "Working on cross-platform Windows/macOS SDK for alternate application monetization platform, giving developer much more freedom of earning on his free applications, than just adding annoying ads.",
       "Projects": {
-        "Continuous Integration": "Here I made significant improvements in the development process and Continuous Integration pipeline, creating a unified system for building, signing and packaging the application."
-      },
+          "Continuous Integration": "Here I made significant improvements in the development process and Continuous Integration pipeline, creating a unified system for building, signing and packaging the application.",
+          "CPU Workload": "Designed and implemented a system to keep CPU workload limited to a certain value to ensure the comfortable user experience."
+        },
       "Programming languages, products and technologies": "C++, Python, JavaScript, CMake, AWS API, Google Test"
     },
     "Web Gears": {
@@ -152,11 +153,11 @@
       "Programming languages, products and technologies": "C/C++, Lua, MFC, WTL, Watcom"
     }
   },
-  "Education": {
+  "Education": [{
     "Institution": "Saint-Petersburg State Polytechnic University",
     "Faculty": "Faculty of Management and Information Technologies",
     "Graduation": 2010,
     "Degree": "BSc in Software Engineering",
     "Achievements": "I had the best average grade in the group, and experience in student conferences and publications"
-  }
+  }]
 }

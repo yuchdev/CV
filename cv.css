@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* All document */
+body {
+  font-family: 'Raleway', serif;
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+
+h1, h2, h3, h4, h5, h6, footer {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1.cv-header {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p, th, td, li, dl, dt, dd {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Header */
+table.personal-details {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.personal-details th,
+table.personal-details td {
+  padding: 8px;
+  text-align: left;
+}
+
+table.personal-details th {
+  font-weight: bold;
+}
+
+table.personal-details tr:nth-child(odd) th,
+table.personal-details tr:nth-child(odd) td {
+  background-color: #f9f9f9;
+}
+
+table.personal-details tr td:first-child {
+  text-align: left;
+  font-weight: bold;
+}
+
+table.personal-details tr td:last-child {
+  text-align: left;
+}
+
+table.personal-details tr td ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+h1.cv-header {
+  text-align: center;
+}
+
+/* Overview */
+
+/* Professional Experience */
+table.job-description {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.job-description th,
+table.job-description td {
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+table.job-description th {
+  width: 230px;
+  font-style: italic;
+  font-size: smaller;
+  background-color: #f2f2f2;
+  vertical-align: top;
+  text-align: left;
+}
+
+/* Education */
