@@ -152,10 +152,9 @@ table.job-description td {
 }
 
 table.job-description th {
-  width: 230px;
+  width:  190px;
   font-style: italic;
   font-size: smaller;
-  background-color: #f2f2f2;
   vertical-align: top;
   text-align: left;
 }
