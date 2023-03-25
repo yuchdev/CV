@@ -9,6 +9,9 @@ from code_generation.html.html_element import HtmlElement
 
 
 def head(data, html):
+    """
+    Generate the <head> section
+    """
     html(f'<!doctype HTML>')
     with html.block('head', lang='en'):
         HtmlElement(
@@ -47,6 +50,9 @@ def head(data, html):
 
 
 def body_header(data, html):
+    """
+    Generate the <body><header> section
+    """
     social_icons = {
         "Facebook": "fab fa-facebook-f",
         "LinkedIn": "fab fa-linkedin-in",
@@ -74,7 +80,9 @@ def body_header(data, html):
 
 
 def personal_details(html, data):
-    # Personal details
+    """
+    Generate the <table>Personal Details</table> inside <body><main>
+    """
     with html.block('table', attributes={'class': 'personal-details'}):
         html(f'<tr><th>Name</th><td>{data["Personal Information"]["Name"]}</td></tr>')
         html(f'<tr><th>Birthdate</th><td>{data["Personal Information"]["Birthdate"]}</td></tr>')
@@ -90,6 +98,9 @@ def personal_details(html, data):
 
 
 def overview(data, html):
+    """
+    Generate the <div>Overview</div> inside <body><main>
+    """
     with html.block('div', attributes={'class': 'section'}):
         with html.block('h2'):
             html('Overview')
@@ -97,6 +108,9 @@ def overview(data, html):
 
 
 def projects(data, html):
+    """
+    Generate the <div>Projects</div> inside <body><main>
+    """
     with html.block('div', attributes={'class': 'section'}):
         with html.block('h2'):
             html('Projects')
@@ -108,6 +122,9 @@ def projects(data, html):
 
 
 def professional_skills(data, html):
+    """
+    Generate the <div>Professional Skills</div> inside <body><main>
+    """
     with html.block('div', attributes={'class': 'section'}):
         with html.block('h2'):
             html('Professional Skills')
@@ -121,6 +138,9 @@ def professional_skills(data, html):
 
 
 def work_experience(data, html):
+    """
+    Generate the <div>Work Experience</div> inside <body><main>
+    """
     with html.block('div', attributes={'class': 'section'}):
         with html.block('h2'):
             html('Experience')
@@ -141,6 +161,9 @@ def work_experience(data, html):
 
 
 def job_description(experience, html, job_description_subkeys):
+    """
+    Generate the <table>Job Description</table> inside <div>Work Experience</div>
+    """
     with html.block('table', attributes={'class': 'job-description'}):
         # Iterate over each key
         for subkey in job_description_subkeys:
@@ -164,6 +187,9 @@ def job_description(experience, html, job_description_subkeys):
 
 
 def education(data, html):
+    """
+    Generate the <div>Education</div> inside <body><main>
+    """
     with html.block('div', attributes={'class': 'section'}):
         with html.block('h2'):
             html('Education')
@@ -178,6 +204,9 @@ def education(data, html):
 
 
 def body_main(data, html):
+    """
+    Generate the <main> inside <body>
+    """
     with html.block('main'):
         with html.block('section', id='container'):
             personal_details(html, data)
@@ -189,6 +218,9 @@ def body_main(data, html):
 
 
 def body_footer(data, html):
+    """
+    Generate the <footer> inside <body>
+    """
     year = datetime.datetime.now().year
     with html.block('footer'):
         html(
@@ -196,7 +228,10 @@ def body_footer(data, html):
         )
 
 
-def generate_cv_from_json(json_file_path: str, html_file_path: str):
+def generate_html(json_file_path: str, html_file_path: str):
+    """
+    Generate HTML document from JSON file
+    """
     with open(json_file_path, 'r') as f:
         data = json.load(f)
     html = HtmlFile(html_file_path)
@@ -210,17 +245,20 @@ def generate_cv_from_json(json_file_path: str, html_file_path: str):
 
 
 def main():
+    """
+    :return: system exit code
+    """
     parser = argparse.ArgumentParser(description='Command-line params')
-    parser.add_argument('--json-cv',
+    parser.add_argument('--input-json',
                         help='JSON document to convert to HTML CV',
                         default="cv.json",
                         required=False)
-    parser.add_argument('--html-cv',
+    parser.add_argument('--output-html',
                         help='HTML CV output file',
                         default="cv.html",
                         required=False)
     args = parser.parse_args()
-    generate_cv_from_json(args.json_cv, args.html_cv)
+    generate_html(args.input_json, args.output_html)
     return 0
 
 

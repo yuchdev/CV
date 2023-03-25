@@ -142,7 +142,7 @@
     "Wärtsilä": {
       "Name": "Wärtsilä (former Transas), Corp.",
       "Brief": "World-Leading developer and supplier of marine and aviation onboard equipment",
-      "Website": "",
+      "Website": "https://www.wartsila.com/",
       "Period": "01.2010 - 07.2011",
       "Position": "Software Developer",
       "Description": "",
@@ -154,7 +154,7 @@
     },
     "DoctorWeb": {
       "Name": "DoctorWeb, LLC",
-      "Brief": "Well-known developer of anti-malware and security solutions",
+      "Brief": "Provider of anti-malware and security solutions",
       "Website": "",
       "Period": "07.2006 - 07.2009",
       "Position": "Junior Software Engineer",
