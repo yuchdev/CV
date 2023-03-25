@@ -17,27 +17,27 @@
     "Twitter": "https://twitter.com/yuchdev",
     "Instagram": "https://www.instagram.com/yuchdev"
   },
-  "Overview": "I am a dedicated software engineer, having more than a decade of experience in software design and development, with the passion for creating good programs and products. My biggest expertise is in C++, as well as Java/Python as secondary languages, separately or together. I supported legacy systems, implemented new systems, and designed them from scratch. I have experience both in enterprise and in startups, setting up development processes and workflows, Agile/Scrum, code review, Continuous Integration, and task tracking, and providing technical leadership to a small team of Software Engineers, DevOps and QA. You can take a look at my projects on Github, including but not limited to software projects:",
-  "Projects": [
-    "I create [educational material](https://github.com/yuchdev/cpp) for the Advanced C++ course",
-    "I’m a creator and maintainer of the only [Comprehensive C++ Books Catalog](https://github.com/yuchdev/CppBooks)",
-    "[Probabilistic calculator, checking whether the file is encrypted or not](https://github.com/yuchdev/entropy_calculator)",
-    "[Simple multi-threaded password bruteforcer for MD5 hash (with educational purpose only!)](https://github.com/yuchdev/md5bruteforcer)",
-    "[Generator of program code](https://github.com/yuchdev/code_generator)"
-  ],
+  "Overview": "I am a dedicated software engineer, having more than a decade of experience in software design and development, with the passion for creating good programs and products. My biggest expertise is in C++, as well as Java/Python as secondary languages, separately or together. I supported legacy systems, implemented new systems, and designed them from scratch. I have experience both in enterprise and in startups, setting up development processes and workflows, Agile/Scrum, code review, Continuous Integration, and task tracking, and providing technical leadership to a small team of Software Engineers, DevOps and QA. You can take a look at my projects on Github, including but not limited to following software projects",
+  "Projects": {
+    "Advanced C++ by Example": "I create [educational material](https://github.com/yuchdev/cpp) for the Advanced C++ course",
+    "Comprehensive C++ Books Catalog": "I’m a creator and maintainer of the only [Comprehensive C++ Books Catalog](https://github.com/yuchdev/CppBooks)",
+    "Probabilistic Calculator": "[Probabilistic calculator](https://github.com/yuchdev/entropy_calculator), checking whether the file is encrypted or not",
+    "MD5 Bruteforcer": "Simple multi-threaded [MD5 password bruteforcer](https://github.com/yuchdev/md5bruteforcer) for MD5 hash (with educational purpose only!)",
+    "Code Generator": "[Generator of program code and reports](https://github.com/yuchdev/code_generator) supporting C++, Java, HTML5 and Markdown"
+  },
   "Professional skills": {
     "Strong experience in С/C++ (incl. C++14/17, STL, Templates)": [
       "Boost (general purpose libraries, Networking, Metaprogramming)",
       "Qt5, QtLinguist, Qt Installer Framework",
       "Cross-platform Development, which I consider my valuable asset",
-      "Concurrency, lack-based and lock-free techniques, and IPC",
+      "Concurrency, lock-based and lock-free techniques, IPC, distributed computing",
       "Educational content"
     ],
     "Smaller but still good experience in Python": [
       "Django REST Framework",
       "PyQt5, PyQML, developing desktop applications with Python",
       "CI/CD pipeline automation",
-      "In general, I can automate basically everything with Python, and like to do that"
+      "In general, I can automate basically everything with Python, and like to do so"
     ],
     "Working experience in Java": [
       "Core Java and JavaFX for cross-platform desktop development",

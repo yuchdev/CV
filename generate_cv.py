@@ -2,6 +2,7 @@ import argparse
 import datetime
 import sys
 import json
+import markdown
 
 from code_generation.html.html_file import HtmlFile
 from code_generation.html.html_element import HtmlElement
@@ -95,6 +96,17 @@ def overview(data, html):
         html(f'<p>{data["Overview"]}</p>')
 
 
+def projects(data, html):
+    with html.block('div', attributes={'class': 'section'}):
+        with html.block('h2'):
+            html('Projects')
+        with html.block('ul', attributes={'class': 'projects'}):
+            for project_name, project_desc in data['Projects'].items():
+                with html.block('dl', attributes={'class': 'projects'}):
+                    html(f'<dt>{project_name}</dt>')
+                    html(f'<dd>{markdown.markdown(project_desc)}</dd>')
+
+
 def professional_skills(data, html):
     with html.block('div', attributes={'class': 'section'}):
         with html.block('h2'):
@@ -172,6 +184,7 @@ def body_main(data, html):
         with html.block('section', id='container'):
             personal_details(html, data)
             overview(data, html)
+            projects(data, html)
             professional_skills(data, html)
             work_experience(data, html)
             education(data, html)
