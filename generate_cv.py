@@ -8,77 +8,6 @@ from code_generation.html.html_file import HtmlFile
 from code_generation.html.html_element import HtmlElement
 
 
-def head(data, html):
-    """
-    Generate the <head> section
-    """
-    html(f'<!doctype HTML>')
-    with html.block('head', lang='en'):
-        HtmlElement(
-            name='meta',
-            self_closing=True,
-            attributes={"charset": "utf-8"}
-        ).render_to_string(html)
-        HtmlElement(
-            name='meta',
-            self_closing=True,
-            attributes={"name": "viewport", "content": "width=device-width, initial-scale=1"}
-        ).render_to_string(html)
-        HtmlElement(
-            name='link',
-            self_closing=True,
-            rel='icon',
-            href="./img/favicon.ico"
-        ).render_to_string(html)
-        HtmlElement(
-            name='link',
-            self_closing=True,
-            rel='stylesheet',
-            href="https://use.fontawesome.com/releases/v5.0.13/css/all.css",
-            src="https://kit.fontawesome.com/bf1ecf6a20.js",
-            crossorigin="anonymous"
-        ).render_to_string(html)
-        HtmlElement(
-            name='link',
-            self_closing=True,
-            rel='stylesheet',
-            href='style.css'
-        ).render_to_string(html)
-
-        HtmlElement(name='title').render_to_string(
-            html, content=f"{data['Personal Information']['Name']}")
-
-
-def body_header(data, html):
-    """
-    Generate the <body><header> section
-    """
-    social_icons = {
-        "Facebook": "fab fa-facebook-f",
-        "LinkedIn": "fab fa-linkedin-in",
-        "GitHub": "fab fa-github-alt",
-        "Twitter": "fab fa-twitter",
-        "Instagram": "fab fa-instagram",
-    }
-    with html.block('header'):
-        with html.block('div', id='avatar-container'):
-            HtmlElement(
-                name='img',
-                self_closing=True,
-                attributes={'src': './img/avatar.jpg', 'alt': 'Profile photo'}
-            ).render_to_string(html)
-        html(f'<h1>{data["Personal Information"]["Name"]}</h1>')
-        html(f'<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget</p>')
-        with html.block('section', id='header-social'):
-            for key, value in data["Social"].items():
-                with html.block('a', href=value, target="_blank"):
-                    HtmlElement(
-                        name='i',
-                        self_closing=False,
-                        attributes={'class': social_icons[key]}
-                    ).render_to_string(html)
-
-
 def personal_details(html, data):
     """
     Generate the <table>Personal Details</table> inside <body><main>
@@ -201,6 +130,77 @@ def education(data, html):
                     html(f'{edu["Degree"]}, {edu["Graduation"]}')
                 with html.block('p'):
                     html(f'{edu["Achievements"]}')
+
+
+def head(data, html):
+    """
+    Generate the <head> section
+    """
+    html(f'<!doctype HTML>')
+    with html.block('head', lang='en'):
+        HtmlElement(
+            name='meta',
+            self_closing=True,
+            attributes={"charset": "utf-8"}
+        ).render_to_string(html)
+        HtmlElement(
+            name='meta',
+            self_closing=True,
+            attributes={"name": "viewport", "content": "width=device-width, initial-scale=1"}
+        ).render_to_string(html)
+        HtmlElement(
+            name='link',
+            self_closing=True,
+            rel='icon',
+            href="./img/favicon.ico"
+        ).render_to_string(html)
+        HtmlElement(
+            name='link',
+            self_closing=True,
+            rel='stylesheet',
+            href="https://use.fontawesome.com/releases/v5.0.13/css/all.css",
+            src="https://kit.fontawesome.com/bf1ecf6a20.js",
+            crossorigin="anonymous"
+        ).render_to_string(html)
+        HtmlElement(
+            name='link',
+            self_closing=True,
+            rel='stylesheet',
+            href='style.css'
+        ).render_to_string(html)
+
+        HtmlElement(name='title').render_to_string(
+            html, content=f"{data['Personal Information']['Name']}")
+
+
+def body_header(data, html):
+    """
+    Generate the <body><header> section
+    """
+    social_icons = {
+        "Facebook": "fab fa-facebook-f",
+        "LinkedIn": "fab fa-linkedin-in",
+        "GitHub": "fab fa-github-alt",
+        "Twitter": "fab fa-twitter",
+        "Instagram": "fab fa-instagram",
+    }
+    with html.block('header'):
+        with html.block('div', id='avatar-container'):
+            HtmlElement(
+                name='img',
+                self_closing=True,
+                attributes={'src': './img/avatar.jpg', 'alt': 'Profile photo'}
+            ).render_to_string(html)
+        html(f'<h1>{data["Personal Information"]["Name"]}</h1>')
+        html(f'<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget</p>')
+        with html.block('section', id='header-social'):
+            for key, value in data["Social"].items():
+                with html.block('a', href=value, target="_blank"):
+                    HtmlElement(
+                        name='i',
+                        self_closing=False,
+                        attributes={'class': social_icons[key]}
+                    ).render_to_string(html)
 
 
 def body_main(data, html):
