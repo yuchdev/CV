@@ -171,10 +171,8 @@ def education(data, html):
             with html.block('div', attributes={'class': 'education'}):
                 with html.block('h3'):
                     html(edu['Institution'])
-                with html.block('h3'):
-                    html(edu['Degree'])
                 with html.block('h4'):
-                    html(f'{edu["Graduation"]}')
+                    html(f'{edu["Degree"]}, {edu["Graduation"]}')
                 with html.block('p'):
                     html(f'{edu["Achievements"]}')
 
