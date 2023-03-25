@@ -20,7 +20,7 @@
   "Overview": "I am a dedicated software engineer, having more than a decade of experience in software design and development, with the passion for creating good programs and products. My biggest expertise is in C++, as well as Java/Python as secondary languages, separately or together. I supported legacy systems, implemented new systems, and designed them from scratch. I have experience both in enterprise and in startups, setting up development processes and workflows, Agile/Scrum, code review, Continuous Integration, and task tracking, and providing technical leadership to a small team of Software Engineers, DevOps and QA. You can take a look at my projects on Github, including but not limited to following software projects",
   "Projects": {
     "Advanced C++ by Example": "I create [educational material](https://github.com/yuchdev/cpp) for the Advanced C++ course",
-    "Comprehensive C++ Books Catalog": "I’m a creator and maintainer of the only [Comprehensive C++ Books Catalog](https://github.com/yuchdev/CppBooks)",
+    "Comprehensive C++ Books Catalog": "I’m a creator and maintainer of the most [Comprehensive C++ Books Catalog](https://github.com/yuchdev/CppBooks)",
     "Probabilistic Calculator": "[Probabilistic calculator](https://github.com/yuchdev/entropy_calculator), checking whether the file of other binary data is encrypted or not",
     "MD5 Bruteforcer": "Simple multi-threaded [MD5 password bruteforcer](https://github.com/yuchdev/md5bruteforcer) for MD5 hash (with educational purpose only!)",
     "Code Generator": "[Generator of program code and reports](https://github.com/yuchdev/code_generator) supporting C++, Java, HTML5 and Markdown. This CV has been generated with the help of this exact generator"
