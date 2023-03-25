@@ -1,7 +1,7 @@
-import argparse
-import datetime
 import sys
 import json
+import argparse
+import datetime
 import markdown
 
 from code_generation.html.html_file import HtmlFile
