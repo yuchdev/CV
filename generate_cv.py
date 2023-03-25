@@ -136,7 +136,6 @@ def head(data, html):
     """
     Generate the <head> section
     """
-    html(f'<!doctype HTML>')
     with html.block('head', lang='en'):
         HtmlElement(
             name='meta',
@@ -235,7 +234,6 @@ def generate_html(json_file_path: str, html_file_path: str):
     with open(json_file_path, 'r') as f:
         data = json.load(f)
     html = HtmlFile(html_file_path)
-
     with html.block('html'):
         head(data, html)
         with html.block('body'):
