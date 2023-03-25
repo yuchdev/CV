@@ -44,27 +44,33 @@
       "High-load blackbox testing platform for REST API"
     ],
     "Unix development": [
-      "POSIX, pthreads",
       "Traditional Unix Toolchains: Scripting (bash), Building (gcc, Makefiles), Debugging (gdb)",
-      "Modern Unix Tools: Profiling (perf, Valgrind), Containerization (Docker), Virtualization (KVM, Xen)"
+      "Modern Unix Toolchains: Profiling (perf, Valgrind), Containerization (Docker), Virtualization (KVM, Xen)",
+      "POSIX, pthreads, high-performance techniques like CPU affinity or kernel bypassing",
+      "Experience of developing for Linux, BSD family and proprietary Unix systems"
     ],
     "Windows development": [
       "Windows API, multithreading, services, COM and RPC",
       "Low-level development, exploit guards, system hooks",
       "WinDbg usage and crash-dumps analysis"
     ],
+    "Database development": [
+      "Use SQL queries, stored procedures, triggers, views, and indexes",
+      "Working experience with large relational databases: MS SQL, Oracle 11g, Postgres",
+      "Use NoSQL (MongoDB, Redis) in a variety of projects, from design to optimizations",
+      "Using embedded databases on a regular basis: SQLite, UnQLite"
+    ],
     "DevOps skills": [
-      "Continuous Integration and Delivery combining TeamCity, GitHub Actions, and Python",
+      "Continuous Integration and Delivery: TeamCity, GitLab CI, GitHub Actions",
       "Git(Hub): Version control, Branch and Release Management",
-      "Docker and general workflow automation on Linux",
-      "AWS, deployment and management tools (EC2/S3/IAM)",
-      "MS Server-Side Technologies: Active Directory, Hyper-V Server, Docker for Windows"
+      "Docker, Ansible and general workflow automation on Linux",
+      "AWS, deployment and management tools, AWS CLI and Boto3 API",
+      "MS Server-Side Technologies: Active Directory and LDAP, Hyper-V Server, Docker for Windows"
     ],
     "General skills": [
+      "Common tools for version control, issue tracking and documentation: Git, Jira, Confluence, Doxygen",
       "Modern Object-Oriented Analysis and Design",
-      "XML/XSL/XSD libraries and XPath Queries",
-      "Working knowledge of database development",
-      "Version control, Bug Tracking and Continuous Integration: Git, SVN, Jira, TeamCity"
+      "XML/XSL/XSD libraries and XPath Queries"
     ]
   },
   "Employment history": {
