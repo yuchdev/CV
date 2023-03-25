@@ -1,3 +1,4 @@
+import os
 import sys
 import json
 import argparse
@@ -231,6 +232,8 @@ def generate_html(json_file_path: str, html_file_path: str):
     """
     Generate HTML document from JSON file
     """
+    if not os.path.exists(json_file_path):
+        raise FileNotFoundError(f"JSON file not found: {json_file_path}")
     with open(json_file_path, 'r') as f:
         data = json.load(f)
     html = HtmlFile(html_file_path)
