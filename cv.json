@@ -21,9 +21,9 @@
   "Projects": {
     "Advanced C++ by Example": "I create [educational material](https://github.com/yuchdev/cpp) for the Advanced C++ course",
     "Comprehensive C++ Books Catalog": "I’m a creator and maintainer of the only [Comprehensive C++ Books Catalog](https://github.com/yuchdev/CppBooks)",
-    "Probabilistic Calculator": "[Probabilistic calculator](https://github.com/yuchdev/entropy_calculator), checking whether the file is encrypted or not",
+    "Probabilistic Calculator": "[Probabilistic calculator](https://github.com/yuchdev/entropy_calculator), checking whether the file of other binary data is encrypted or not",
     "MD5 Bruteforcer": "Simple multi-threaded [MD5 password bruteforcer](https://github.com/yuchdev/md5bruteforcer) for MD5 hash (with educational purpose only!)",
-    "Code Generator": "[Generator of program code and reports](https://github.com/yuchdev/code_generator) supporting C++, Java, HTML5 and Markdown"
+    "Code Generator": "[Generator of program code and reports](https://github.com/yuchdev/code_generator) supporting C++, Java, HTML5 and Markdown. This CV has been generated with the help of this exact generator"
   },
   "Professional skills": {
     "Strong experience in С/C++ (incl. C++14/17, STL, Templates)": [
