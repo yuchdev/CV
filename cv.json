@@ -79,7 +79,7 @@
       "Brief": "IT-Security Startup",
       "Website": "https://www.vektort13.pro/",
       "Period": "12.2019 - 04.2022",
-      "Position": "Lead C++ developer",
+      "Position": "Lead Software Engineer",
       "Description": "We were a small startup, attempting to create a line of privacy-related products, including protection against fingerprinting, surveillance and tracking, and had plans of a hardened VPN service",
       "Projects": {
         "Virtualbox": "Powerful opensource x86/AMD64/Intel64 virtualization product. I created my own branch with slight improvements over the Oracle version, implemented a cross-platform build toolchain, and worked on documentation.",
@@ -131,7 +131,7 @@
       "Brief": "Analytics Provider for derivatives and financial products",
       "Website": "https://numerix.com/",
       "Period": "07.2011 - 08.2012",
-      "Position": "Senior Software Developer",
+      "Position": "Software Engineer",
       "Description": "",
       "Projects": {
         "CrossAsset": "My primary project was Numerix CrossAsset, a flexible platform for structuring, pricing, and risk managing derivatives, accessible through Excel add-ins, C++, C#, or Java API. I did lots of QA automation of all sorts, introducing writing black-box tests in Python for my team, since numbers are very testable, naturally including performance profiling in the test coverage.",
