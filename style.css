@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+/* Document-wide */
 body {
   margin: 0;
   font-family: 'Raleway', serif;
@@ -20,11 +21,58 @@ article {
   padding:0 1em;
 }
 
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p, th, td, li, dl, dt, dd {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h3, h4 {
+  font-weight: bold;
+}
+
+main {
+  max-width: 1140px;
+}
+
 main section{
   margin: 1em;
   padding: 1em;
 }
 
+main section:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.fab {
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin: 5px;
+  text-align: center;
+}
+
+a .fab {
+  color: white;
+}
+
+/* Header */
 header, main, footer {
   margin: 0 auto;
 }
@@ -47,44 +95,7 @@ header img {
   max-width: 150px;
 }
 
-h1 {
-  text-transform: uppercase;
-  margin: 1em 0;
-}
-
-h3 {
-  text-transform: uppercase;
-}
-
-h3, h4 {
-  font-weight: bold;
-}
-
-main {
-  max-width: 1140px;
-}
-
-main section:not(:last-child) {
-  border-bottom: 1px solid #ccc;
-}
-
-.fab {
-  border: 1px solid white;
-  border-radius: 50%;
-  font-size: 1.5em;
-  width: 1.5em;
-  height: 1.5em;
-  line-height: 1.5em;
-  margin: 5px;
-  text-align: center;
-}
-
-a .fab {
-  color: white;
-}
-
 /* Nav panel */
-
 nav {
   position: absolute;
   top: 0;
@@ -119,26 +130,7 @@ nav a:visited {
   color: #ffffff;
 }
 
-/* Footer */
-
-footer {
- padding: 1em 1.5em;
- background: #A7B8BF;
- color: white;
- text-align: center;
-}
-
-h2 {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-p, th, td, li, dl, dt, dd {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-/* Header */
+/* Personal Details */
 table.personal-details {
   width: 100%;
   border-collapse: collapse;
@@ -176,6 +168,24 @@ table.personal-details tr td ul {
 
 /* Overview */
 
+/* Projects */
+table.projects {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Invisible borders */
+table.projects th, table.projects td {
+  border: 1px solid transparent;
+  padding: 0;
+}
+
+/* Emphasize the project title */
+dl.project dt {
+  font-weight: bold;
+}
+
+
 /* Professional Experience */
 table.job-description {
   border-collapse: collapse;
@@ -198,3 +208,11 @@ table.job-description th {
 }
 
 /* Education */
+
+/* Footer */
+footer {
+  padding: 1em 1.5em;
+  background: #A7B8BF;
+  color: white;
+  text-align: center;
+}

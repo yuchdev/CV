@@ -44,11 +44,13 @@ def projects(data, html):
     with html.block('div', attributes={'class': 'section'}):
         with html.block('h2'):
             html('Projects')
-        with html.block('ul', attributes={'class': 'projects'}):
+        with html.block('table', attributes={'class': 'projects'}):
             for project_name, project_desc in data['Projects'].items():
-                with html.block('dl', attributes={'class': 'projects'}):
-                    html(f'<dt>{project_name}</dt>')
-                    html(f'<dd>{markdown.markdown(project_desc)}</dd>')
+                with html.block('tr'):
+                    with html.block('td'):
+                        with html.block('dl', attributes={'class': 'projects'}):
+                            html(f'<dt>{project_name}</dt>')
+                            html(f'<dd>{markdown.markdown(project_desc)}</dd>')
 
 
 def professional_skills(data, html):
