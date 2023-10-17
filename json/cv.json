@@ -1,0 +1,176 @@
+{
+  "Personal Information": {
+    "Name": "Yurii Cherkasov",
+    "Birthdate": "21.05.1982",
+    "E-mail": "yurii.cherkasov@protonmail.com",
+    "Phone": [
+      "+1 (256) 8503463",
+      "+84 (83) 9052141",
+      "+380 (68) 5655707"
+    ],
+    "Current location": "Ho Chi Minh City, Vietnam (UTC+7)"
+  },
+  "Social": {
+    "LinkedIn": "https://www.linkedin.com/in/yuchdev/",
+    "GitHub": "https://github.com/yuchdev",
+    "Facebook": "https://www.facebook.com/yuchdev",
+    "Twitter": "https://twitter.com/atatatizer",
+    "Instagram": "https://www.instagram.com/yuchdev"
+  },
+  "Overview": "I am a dedicated software engineer, having more than a decade of experience in software design and development, with the passion for creating good programs and products. My biggest expertise is in C++, as well as Java/Python as secondary languages, separately or together. I supported legacy systems, implemented new systems, and designed them from scratch. I have experience both in enterprise and in startups, setting up development processes and workflows, Agile/Scrum, code review, Continuous Integration, and task tracking, and providing technical leadership to a small team of Software Engineers, DevOps and QA. You can take a look at my projects on Github, including but not limited to following software projects",
+  "Projects": {
+    "Advanced C++ by Example": "I create [educational material](https://github.com/yuchdev/cpp) for the Advanced C++ course",
+    "Comprehensive C++ Books Catalog": "I’m a creator and maintainer of the most [Comprehensive C++ Books Catalog](https://github.com/yuchdev/CppBooks)",
+    "Probabilistic Calculator": "[Probabilistic calculator](https://github.com/yuchdev/entropy_calculator), checking whether the file of other binary data is encrypted or not",
+    "MD5 Bruteforcer": "Simple multi-threaded [MD5 password bruteforcer](https://github.com/yuchdev/md5bruteforcer) for MD5 hash (with educational purpose only!)",
+    "Code Generator": "[Generator of program code and reports](https://github.com/yuchdev/code_generator) supporting C++, Java, HTML5 and Markdown. This CV has been generated with the help of this exact generator"
+  },
+  "Professional skills": {
+    "Strong experience in С/C++ (incl. C++14/17, STL, Templates)": [
+      "Boost (general purpose libraries, Networking, Metaprogramming)",
+      "Qt5, QtLinguist, Qt Installer Framework",
+      "Cross-platform Development, which I consider my valuable asset",
+      "Concurrency, lock-based and lock-free techniques, IPC, distributed computing",
+      "Educational content"
+    ],
+    "Smaller but still good experience in Python": [
+      "Django REST Framework",
+      "PyQt5, PyQML, developing desktop applications with Python",
+      "CI/CD pipeline automation",
+      "In general, I can automate basically everything with Python, and like to do so"
+    ],
+    "Working experience in Java": [
+      "Core Java and JavaFX for cross-platform desktop development",
+      "High-load blackbox testing platform for REST API"
+    ],
+    "Unix development": [
+      "Traditional Unix Toolchains: Scripting (bash), Building (gcc, Makefiles), Debugging (gdb)",
+      "Modern Unix Toolchains: Profiling (perf, Valgrind), Containerization (Docker), Virtualization (KVM, Xen)",
+      "POSIX, pthreads, high-performance techniques like CPU affinity or kernel bypassing",
+      "Experience of developing for Linux, BSD family and proprietary Unix systems"
+    ],
+    "Windows development": [
+      "Windows API, multithreading, services, COM and RPC",
+      "Low-level development, exploit guards, system hooks",
+      "WinDbg usage and crash-dumps analysis"
+    ],
+    "Database development": [
+      "Use SQL queries, stored procedures, triggers, views, and indexes",
+      "Working experience with large relational databases: MS SQL, Oracle 11g, Postgres",
+      "Use NoSQL (MongoDB, Redis) in a variety of projects, from design to optimizations",
+      "Using embedded databases on a regular basis: SQLite, UnQLite"
+    ],
+    "DevOps skills": [
+      "Continuous Integration and Delivery: TeamCity, GitLab CI, GitHub Actions",
+      "Git(Hub): Version control, Branch and Release Management",
+      "Docker, Ansible and general workflow automation on Linux",
+      "AWS, deployment and management tools, AWS CLI and Boto3 API",
+      "MS Server-Side Technologies: Active Directory and LDAP, Hyper-V Server, Docker for Windows"
+    ],
+    "General skills": [
+      "Common tools for version control, issue tracking and documentation: Git, Jira, Confluence, Doxygen",
+      "Modern Object-Oriented Analysis and Design",
+      "XML/XSL/XSD libraries and XPath Queries"
+    ]
+  },
+  "Employment history": {
+    "VEKTOR T13 Technologies": {
+      "Name": "Vektor T13 Technologies, LLC",
+      "Brief": "IT-Security Startup",
+      "Website": "https://www.vektort13.pro/",
+      "Period": "12.2019 - 04.2022",
+      "Position": "Lead Software Engineer",
+      "Description": "We were a small startup, attempting to create a line of privacy-related products, including protection against fingerprinting, surveillance and tracking, and had plans of a hardened VPN service",
+      "Projects": {
+        "Virtualbox": "Powerful opensource x86/AMD64/Intel64 virtualization product. I created my own branch with slight improvements over the Oracle version, implemented a cross-platform build toolchain, and worked on documentation.",
+        "IP Audit": "Anti-fraud system for a comprehensive audit of IP addresses, providing reports about geographical location, connection details, and threats that could possess that IP address. I was working on the server-side, developing an Anti-Fraud API Aggregator for collecting information about requested IP from a number of 3rd-party APIs"
+      },
+      "Programming languages, products and technologies": "C, C++, Qt5, Python, PyQt, Django REST Framework, CMake, TeamCity"
+    },
+    "Massive": {
+      "Name": "Massive, LLC",
+      "Brief": "Distributed computing service provider",
+      "Website": "https://www.joinmassive.com/",
+      "Period": "09.2019 - 12.2019",
+      "Position": "Senior Software Engineer",
+      "Description": "Working on cross-platform Windows/macOS SDK for alternate application monetization platform, giving developer much more freedom of earning on his free applications, than just adding annoying ads.",
+      "Projects": {
+          "Continuous Integration": "Here I made significant improvements in the development process and Continuous Integration pipeline, creating a unified system for building, signing and packaging the application.",
+          "CPU Workload": "Designed and implemented a system to keep CPU workload limited to a certain value to ensure the comfortable user experience."
+        },
+      "Programming languages, products and technologies": "C++, Python, JavaScript, CMake, AWS API, Google Test"
+    },
+    "Web Gears": {
+      "Name": "WebGear Services, LTD (Trademark CyberYozh)",
+      "Brief": "Internet Privacy Startup",
+      "Website": "https://cyberyozh.com/",
+      "Period": "10.2014 - 07.2018",
+      "Position": "Consultant, Lead C++ developer",
+      "Description": "From this point, I turned from large corporations to small startups. With my enterprise experience, I defined basically everything from architecture to process from scratch, including Continuous Integration and QA, but still, it was still mostly technical, not a management position.",
+      "Projects": {
+        "VPN client": "VPN client with traffic leakage protection",
+        "PanicButton": "PanicButton is an Emergency Data Wiping System, which destroys all sensitive data without the possibility of recovery in case of critical situation, like stealing the laptop with sensitive information"
+      },
+      "Programming languages, products and technologies": "C++, Boost, Qt5, Python, Windows RAS API, REST API, CMake, TeamCity"
+    },
+    "Deutsche Bank": {
+      "Name": "Deutsche Bank AG",
+      "Brief": "Global Investment Bank",
+      "Website": "https://db.com/",
+      "Period": "11.2012 - 09.2014",
+      "Position": "Associate Software Engineer",
+      "Description": "",
+      "Projects": {
+        "RAPID": "Probably, the most technically challenging project in my corporate career so far. It was a low-latency trading platform, and I improved latency-critical (<20 mcs for the trading cycle) messaging system performance. At last, I used lock-free algorithms not as a programming brain-teaser, but in production code.",
+        "RMS": "A significant risk-management system with multi-tier architecture, where I touched modules doing analytics, computation, and distributed computing, but the scale of the system was 100 times more than I knew. Here I worked closely with the analytics team, converting business requirements to software architecture and program code, and providing occasional support to business users. During this time I significantly improved the continuous integration pipeline based on the TeamCity server and Python automation."
+      },
+      "Programming languages, products and technologies": "C++, Boost, MS Excel/VBA, Python, XML/XSL/XPath, CppUnit, Oracle 11g, TeamCity, REST API"
+    },
+    "Numerix": {
+      "Name": "Numerix, LLC",
+      "Brief": "Analytics Provider for derivatives and financial products",
+      "Website": "https://numerix.com/",
+      "Period": "07.2011 - 08.2012",
+      "Position": "Software Engineer",
+      "Description": "",
+      "Projects": {
+        "CrossAsset": "My primary project was Numerix CrossAsset, a flexible platform for structuring, pricing, and risk managing derivatives, accessible through Excel add-ins, C++, C#, or Java API. I did lots of QA automation of all sorts, introducing writing black-box tests in Python for my team, since numbers are very testable, naturally including performance profiling in the test coverage.",
+        "Database": "Also, I increased the speed of the internal database about 4 times using system-dependent optimizations using Windows and POSIX APIs, instead of generic C++ implementation."
+      },
+      "Programming languages, products and technologies": "С/C++, Python, Excel COM API, WinAPI, POSIX API, Valgrind"
+    },
+    "Wärtsilä": {
+      "Name": "Wärtsilä (former Transas), Corp.",
+      "Brief": "World-Leading developer and supplier of marine and aviation onboard equipment",
+      "Website": "https://www.wartsila.com/",
+      "Period": "01.2010 - 07.2011",
+      "Position": "Software Developer",
+      "Description": "",
+      "Projects": {
+        "Gravity": "I designed and developed land equipment and onboard software for wildfire monitoring drones, GUI and GIS in Java, and ground control and onboard software in C/C++. My role included the full-scale development tasks - application design, bug fixing, writing unit-tests, and performing code reviews.",
+        "Automation": "A number of internal projects. Here I developed X-Window events logging module for a complex security and monitoring system using Xlib API, and improved the Continuous Integration pipeline."
+      },
+      "Programming languages, products and technologies": "С/C++, Java SE, Python, Autotools, CMake, XML/XSL/XPath, Google Test"
+    },
+    "DoctorWeb": {
+      "Name": "DoctorWeb, LLC",
+      "Brief": "Provider of anti-malware and security solutions",
+      "Website": "",
+      "Period": "07.2006 - 07.2009",
+      "Position": "Junior Software Engineer",
+      "Description": "Here’s where my Software Engineer career has started. I wanted to touch as much as possible, but also I wanted to participate in a whole cycle from design analysis to release. Kind of success in it.",
+      "Projects": {
+        "Doctor Web Security Space": "My first project was a multi-module solution for the protection of workstations and small servers against malware. First I was working on GUI, then switched to other components, like C++ SQLite library, asynchronous RPC-server for Windows, as well as some routine work like legacy codebase maintaining, fixing some bugs and refactoring.",
+        "Doctor Web Updater": "It was a cross-platform module, supposed to update any company product, from Windows antivirus to server-scale solutions for ISP. Here I implemented a cross-platform update service using plain C++ and Boost libraries, and an embedded Lua module for business logic."
+      },
+      "Programming languages, products and technologies": "C/C++, Lua, MFC, WTL, Watcom"
+    }
+  },
+  "Education": [{
+    "Institution": "Saint-Petersburg State Polytechnic University",
+    "Faculty": "Faculty of Management and Information Technologies",
+    "Graduation": 2010,
+    "Degree": "BSc in Software Engineering",
+    "Achievements": "The best average grade in the group, experience in student conferences and publications"
+  }]
+}
